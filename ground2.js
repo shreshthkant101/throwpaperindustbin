@@ -16,5 +16,5 @@ class Ground2 {
       rect(pos.x, pos.y, this.width, this.height);
       
     }
-  };
+  }
   
