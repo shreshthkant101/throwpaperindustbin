@@ -15,9 +15,9 @@ function setup(){
     bin = new DustBin(800,398,200,200);
     
     p1 = new Paper(300,300);
-    holder1 = new Ground2(900,595,160,10);
-    holder2 = new Ground2(808,500,10,160);
-    holder3 = new Ground2(990,500,10,160);
+    holder1 = new Ground(900,595,160,10);
+    holder2 = new Ground(808,500,10,160);
+    holder3 = new Ground(990,500,10,160);
 }
 
 function draw(){
