@@ -1,14 +1,10 @@
 class DustBin extends BaseClass {
     constructor(x, y, width, height){
     var options ={
-        isStatic: false
+        isStatic: true
     }
       super(x,y,width,height);
       this.image = loadImage("dustbin.png");
-      this.x = x;
-      this.y = y;
-      this.width = width;
-      this.height = height;
     }
     
   
