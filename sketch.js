@@ -4,7 +4,9 @@ const Bodies = Matter.Bodies;
 
 var engine, world;
 var ground;
-
+function preload(){
+    img = loadImage('dustbin.png');
+}
 function setup(){
     var canvas = createCanvas(1280,606);
     engine = Engine.create();
@@ -12,8 +14,8 @@ function setup(){
     
     ground = new Ground(600,height,1600,20);
     
-    bin = new DustBin(800,398,200,200);
-    
+    bin = createSprite(800,398,200,200);
+    bin.addImage("bin",img);
     p1 = new Paper(300,300);
     
 
@@ -47,5 +49,6 @@ function draw(){
     if (keyIsDown(DOWN_ARROW)) { 
         p1.move4();
     } 
+    drawSprites();
 }
 
