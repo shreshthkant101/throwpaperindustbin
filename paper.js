@@ -4,15 +4,7 @@ class Paper extends BaseClass {
       this.image = loadImage("paper.png");
     }
   
-   display(){     
-    super.display();
-      
-       push();
-       image(this.image, this.body.position.x, this.body.position.y,100, 90);
-       pop();
-     
-     
-   }
+  
    move(){
        this.body.position.y = this.body.position.y - 0.9;
        
