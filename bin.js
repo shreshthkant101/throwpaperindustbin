@@ -10,9 +10,7 @@ class DustBin extends BaseClass {
       this.width = width;
       this.height = height;
     }
-    display(){
-        image(this.image,this.x,this.y,this.width,this.height);
-    }
+    
   
   };
   
