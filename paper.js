@@ -8,7 +8,7 @@ class Paper extends BaseClass {
     super.display();
       
        push();
-       image(this.image, this.body.position.x, this.body.position.y,53, 53);
+       image(this.image, this.body.position.x, this.body.position.y,100, 90);
        pop();
      
      
